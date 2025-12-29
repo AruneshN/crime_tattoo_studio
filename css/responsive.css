@@ -1,0 +1,126 @@
+
+
+/* --------------------------------------------------------------  Tablets (768px to 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo-img {
+    width: 70px;
+    height: 70px;
+  }
+  .container {
+    display: flex;
+    border: 0.1rem solid black;
+    align-items: center;
+  }
+
+  .logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 50px;
+    position: relative;
+    left: 50px; /* Moves the image 50px to the right */
+    top: 0px;
+  }
+
+  .location-btn {
+    top: 2px;
+    display: flex;
+    margin-left: 1320px;
+    /* font-size: 10vh; */
+    padding: 0.5rem 2rem; /* Add vertical and horizontal space around the text */
+    font-size: 0.900rem;    /* Set a font size relative to the root element */
+    border: 0.1rem solid black;
+    cursor: pointer;
+    background-color: white;
+
+  }
+  .location-btn:hover{
+    background-color: black;
+    color: white;
+  }
+
+.img-whatsapp{
+cursor: pointer;
+width:2rem;
+height: 2rem;
+margin-left: 10px;
+}
+
+/* menu-dropdown */
+.img-menu{
+  cursor: pointer;
+width:2rem;
+height: 2rem;
+margin-left: 10px;
+}
+
+}
+
+
+
+
+/*------------------------------------------------------------------  Laptops and desktops (1025px and up) ------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1025px) {
+  .container {
+    display: flex;
+    border: 0.1rem solid black;
+    align-items: center;
+  }
+
+  .logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 50px;
+    position: relative;
+    /* left: 50px; Moves the image 50px to the right */
+    left: 35px; /* Moves the image 50px to the right */
+    top: 0px;
+  }
+
+  .location-btn {
+    top: 2px;
+    display: flex;
+    margin-left: 1320px;
+    /* font-size: 10vh; */
+    padding: 0.5rem 2rem; /* Add vertical and horizontal space around the text */
+    font-size: 0.900rem;    /* Set a font size relative to the root element */
+    border: 0.1rem solid black;
+    cursor: pointer;
+    background-color: white;
+
+  }
+  .location-btn:hover{
+    background-color: black;
+    color: white;
+  }
+
+
+.img-whatsapp{
+cursor: pointer;
+width:2rem;
+height: 2rem;
+margin-left: 10px;
+}
+
+/* menu-dropdown */
+.img-menu{
+  cursor: pointer;
+width:2rem;
+height: 2rem;
+margin-left: 10px;
+}
+
+/* front-img */
+.front-img-div {
+  display: flex;              /* Enables flexbox */
+  justify-content: center;    /* Horizontally centers the image */
+  align-items: center;        /* Vertically centers if container has height */
+  height: 100%;               /* Optional: set if you want vertical centering within a defined height */
+  width: 100%;
+}
+
+.front-img {
+  max-width: 100%;            /* Image won’t exceed container width */
+  width: 1600px;
+  height: auto;        
+  display: block;             /* Removes default inline space */
+}
