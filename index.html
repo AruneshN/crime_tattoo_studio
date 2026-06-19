@@ -5,127 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css.css">
     <link rel="icon" href="image/logo.png">
-    <!-- ✅ Load Font Awesome -->
-     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Crime Tattoo Studio &amp; Academy</title>
 </head>
-<title>crime tattoo studio</title>
 <body>
-    <!-- <div class="container"> -->
-        <header class="container">
-            <div class=img-div>
-            <img class="logo-img" src="image/logo-img.png" alt="">
-           </div>
-      
-        <!-- --------------------------------------------------------------whatsapp -------------------------------------------------->
-        <div>
-            <a href="https://wa.me/9361413159" target="_blank"><img src="image/whatsapp.png" alt="WhatsApp" class="img-whatsapp"></a>
+
+    <!-- ---------------------------------------------------------------- menu-bar ---------------------------------------------------------------- -->
+    <header class="header">
+        <a href="#home" class="logo-link">
+            <img src="image/logo-img.png" alt="Crime Tattoo Studio" class="header-logo">
+        </a>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li class="active"><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#aesthetics">AESTHETICS</a></li>
+                <li><a href="#academy">TATTOO ACADEMY</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger" onclick="openMenu()" role="button" aria-label="Open menu" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <!-- ------------------------------------------------- menu-bar ------------------------------------------------------------------------>
-      
-        </header>
-        
+    </header>
 
-<!-- ----------------------------------------------------------------------------------front image ------------------------------------------------------->
-   <div class="front-img-div">
-  <img src="image/front_img.webp" alt="" class="front-img">
-  <div class="overlay">
-  <h1 class="overlay-text">Crime Tattoo Studio <br>& Academy</h1>
-  <p class="overlay-text-P">Tattoos | Piercings | Tattoo Training</p>
-  <button class="overlay-text-button">BOOK APPOINMENT</button>
-    <img class="front-img-artist"src="image/artist.jpg" alt="">
+    <!-- Sidebar Menu (mobile) -->
+    <div id="menu" class="menu">
+        <div class="menu-header">
+            <img src="image/logo-img.png" alt="Crime Tattoo Studio" class="menu-logo">
+            <span class="close" onclick="closeMenu()">✕</span>
+        </div>
 
-  </div>
-</div>
-<!-- bio -->
-<div class="brand-container">
-    <img src="image/logo-img.png" alt="" class="brand-img-1">
-</div>
-
-<div class="bio">
-    <h1 class="bio-font">Ink with Intention — The Best Tattoo Experience in Salem</h1>
-</div>
-
-<div class="para-div">
-    <p class="bio-para">Tattoos are more than just ink — they are emotions, memories, and personal stories etched into the skin forever. That’s why every tattoo demands precision, artistry, and a deep understanding of what the client truly wants.
-With 8+ years of professional experience, we’ve mastered the craft of combining creativity with meaning, ensuring every tattoo is as unique and unforgettable as the person wearing it.</p>
-
-    <p class="bio-para" style="margin-top: 30px;">At Crime Tattoo Studio, we don’t just offer tattoo designs — we create meaningful experiences that stay with you long after the ink settles. Your first tattoo isn’t just an artwork, it’s a memory, a story, and a moment that deserves to be perfect.
-That’s why our clients don’t just choose us once — they return, they recommend, and they trust us with every new chapter of their story.</p>
-</div>
-
-
-
-<div>
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C_cwazCBXY9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" data-instgrm-version="14" style="width:100%; max-width:540px; margin:0 auto;">
-</blockquote>
-<script async src="https://www.instagram.com/embed.js"></script>
-</div>
-
-<div style="text-align: center;">
-    <h1 class="pricing">Pricing</h1></div>
-     <!-- tattoo -->     
-     <div class="price-card">
-    <h2>TATTOOS</h2>
-    <p class="sub">Starting Price</p>
-    <h3 class="price">₹399</h3>
-    <p class="desc">
-        "Our pricing is calculated on a per-inch basis and varies according to the size, design complexity, and detailing requirements."
-    </p>
-</div>
-
- <div class="price-card">
-    <h2>PIERCING</h2>
-    <p class="sub">Starting Price</p>
-    <h3 class="price">₹100</h3>
-    <p class="desc">
-        "Our Piercing pricing is calculated on a per-inch basis and varies according to the size, design complexity, and detailing requirements."
-    </p>
-</div>
-
-<div class="price-card">
-    <h2>COURSES</h2>
-    <p class="sub">Starting Price</p>
-    <h3 class="price">₹10000</h3>
-    <p class="desc">
-        "Our Piercing pricing is calculated on a per-inch basis and varies according to the size, design complexity, and detailing requirements."
-    </p>
-</div>
-<!-- ----------------------------------------------------------------------- artist --------------------------------------------------------------- -->
-<div class="artist">
-    <h1 >Artist</h1>
-</div>
-
-<div class="center-wrapper">
-<div class="team-card">
-    <img src="image/artist-img.jpg" alt="Founder Image" class="team-img">
-
-    <div class="team-info">
-        <h2>HARISH</h2>
-        <p>Founder and Artist</p>
-        <a href="https://www.instagram.com/crime_tattoo_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="insta-icon">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-            <a href="portfolio.html" class="portfolio-btn" target="_blank">
-            View Portfolio
-        </a>
+        <ul>
+            <li class="active"><a href="#home" onclick="closeMenu()">HOME</a></li>
+            <li><a href="#about" onclick="closeMenu()">ABOUT</a></li>
+            <li><a href="#aesthetics" onclick="closeMenu()">AESTHETICS</a></li>
+            <li><a href="#academy" onclick="closeMenu()">TATTOO ACADEMY</a></li>
+            <li><a href="#contact" onclick="closeMenu()">CONTACT US</a></li>
+        </ul>
     </div>
-</div>
-<!-- FontAwesome for Instagram Icon -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-</div>
-<!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------- front image ---------------------------------------------------------------- -->
+    <div class="front-img-div" id="home">
+        <img src="image/front_img.webp" alt="Crime Tattoo Studio interior" class="front-img">
+        <div class="overlay">
+            <h1 class="overlay-text">Crime Tattoo Studio<br>&amp; Academy</h1>
+            <p class="overlay-text-P">Tattoos | Piercings | Tattoo Training</p>
+            <a href="https://wa.me/919361413159?text=Hi%2C%20I%27d%20like%20to%20book%20a%20tattoo%20appointment." target="_blank" rel="noopener" class="overlay-text-button">
+                <i class="fa-brands fa-whatsapp"></i> BOOK APPOINTMENT
+            </a>
+            <img class="front-img-artist" src="image/artist.jpg" alt="Tattoo artist at work">
+        </div>
+    </div>
 
+    <!-- ---------------------------------------------------------------- bio ---------------------------------------------------------------- -->
+    <div class="brand-container">
+        <img src="image/logo-img.png" alt="" class="brand-img-1">
+    </div>
 
-<div class="art-work">
- <h1>Our Artworks</h1>
+    <div class="bio">
+        <h1 class="bio-font">Ink with Intention — The Best Tattoo Experience in Salem</h1>
+    </div>
 
+    <div class="para-div">
+        <p class="bio-para">Tattoos are more than just ink — they are emotions, memories, and personal stories etched into the skin forever. That's why every tattoo demands precision, artistry, and a deep understanding of what the client truly wants.
+        With 8+ years of professional experience, we've mastered the craft of combining creativity with meaning, ensuring every tattoo is as unique and unforgettable as the person wearing it.</p>
 
-</div>
+        <p class="bio-para" style="margin-top: 30px;">At Crime Tattoo Studio, we don't just offer tattoo designs — we create meaningful experiences that stay with you long after the ink settles. Your first tattoo isn't just an artwork, it's a memory, a story, and a moment that deserves to be perfect.
+        That's why our clients don't just choose us once — they return, they recommend, and they trust us with every new chapter of their story.</p>
+    </div>
 
+    <div class="insta-embed-wrap">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C_cwazCBXY9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" data-instgrm-version="14" style="width:100%; max-width:540px; margin:0 auto;">
+        </blockquote>
+        <script async src="https://www.instagram.com/embed.js"></script>
+    </div>
 
-</div>
-</div>
+    <!-- ---------------------------------------------------------------- ABOUT (placeholder — replace with real content) ---------------------------------------------------------------- -->
+    <section id="about" class="content-section">
+        <h1 class="section-title">About</h1>
+        <p class="placeholder-note">Placeholder section — replace this text and image with real content.</p>
+        <div class="placeholder-block">
+            <p class="placeholder-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- AESTHETICS (placeholder — replace with real content) ---------------------------------------------------------------- -->
+    <section id="aesthetics" class="content-section content-section-alt">
+        <h1 class="section-title">Aesthetics</h1>
+        <p class="placeholder-note">Placeholder section — replace this text and gallery with real content.</p>
+        <div class="placeholder-grid">
+            <div class="placeholder-box"></div>
+            <div class="placeholder-box"></div>
+            <div class="placeholder-box"></div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- TATTOO ACADEMY (placeholder — replace with real content) ---------------------------------------------------------------- -->
+    <section id="academy" class="content-section">
+        <h1 class="section-title">Tattoo Academy</h1>
+        <p class="placeholder-note">Placeholder section — replace this text with real course details.</p>
+        <div class="placeholder-block">
+            <p class="placeholder-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- CONTACT US (placeholder — replace with real content) ---------------------------------------------------------------- -->
+    <section id="contact" class="content-section content-section-alt">
+        <h1 class="section-title">Contact Us</h1>
+        <p class="placeholder-note">Placeholder section — replace this with your real address, hours, and contact details.</p>
+        <div class="placeholder-block">
+            <p class="placeholder-text">Address line one, Salem, Tamil Nadu.<br>Open Tuesday–Sunday, 10am–8pm.<br>Phone / WhatsApp: +91 93614 13159.</p>
+            <a href="https://wa.me/919361413159?text=Hi%2C%20I%27d%20like%20to%20book%20a%20tattoo%20appointment." target="_blank" rel="noopener" class="contact-whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i> CHAT ON WHATSAPP
+            </a>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- pricing ---------------------------------------------------------------- -->
+    <div style="text-align: center;">
+        <h1 class="pricing">Pricing</h1>
+    </div>
+
+    <div class="price-grid">
+        <div class="price-card">
+            <h2>TATTOOS</h2>
+            <p class="sub">Starting Price</p>
+            <h3 class="price">₹399</h3>
+            <p class="desc">Our pricing is calculated on a per-inch basis and varies according to the size, design complexity, and detailing requirements.</p>
+        </div>
+
+        <div class="price-card">
+            <h2>PIERCING</h2>
+            <p class="sub">Starting Price</p>
+            <h3 class="price">₹100</h3>
+            <p class="desc">Our piercing pricing varies according to the placement, jewellery used, and aftercare requirements.</p>
+        </div>
+
+        <div class="price-card">
+            <h2>COURSES</h2>
+            <p class="sub">Starting Price</p>
+            <h3 class="price">₹10000</h3>
+            <p class="desc">Our tattoo academy courses are structured by skill level, duration, and the techniques covered.</p>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- artist ---------------------------------------------------------------- -->
+    <div class="artist">
+        <h1>Artist</h1>
+    </div>
+
+    <div class="center-wrapper">
+        <div class="team-card">
+            <img src="image/artist-img.jpg" alt="Harish, Founder and Artist" class="team-img">
+
+            <div class="team-info">
+                <h2>HARISH</h2>
+                <p>Founder and Artist</p>
+                <a href="https://www.instagram.com/crime_tattoo_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="insta-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="portfolio.html" class="portfolio-btn" target="_blank">
+                    View Portfolio
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- artworks ---------------------------------------------------------------- -->
+    <div class="art-work">
+        <h1>Our Artworks</h1>
+    </div>
+
+    <!-- ---------------------------------------------------------------- floating whatsapp (mobile + desktop) ---------------------------------------------------------------- -->
+    <a href="https://wa.me/919361413159?text=Hi%2C%20I%27d%20like%20to%20book%20a%20tattoo%20appointment." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Book appointment on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Crime Tattoo Studio &amp; Academy, Salem.</p>
+    </footer>
+
+    <script>
+        function openMenu() {
+            document.getElementById("menu").classList.add("active");
+        }
+
+        function closeMenu() {
+            document.getElementById("menu").classList.remove("active");
+        }
+    </script>
 </body>
 </html>
