@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css.css">
+    <link rel="icon" href="image/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Tattoo Academy — Crime Tattoo Studio</title>
+</head>
+<body>
+
+    <!-- ---------------------------------------------------------------- menu-bar ---------------------------------------------------------------- -->
+    <header class="header">
+        <a href="index.html" class="logo-link">
+            <img src="image/logo-img.png" alt="Crime Tattoo Studio" class="header-logo">
+        </a>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#aesthetics">SERVICES</a></li>
+                <li class="active"><a href="academy.html">TATTOO ACADEMY</a></li>
+                <li><a href="index.html#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger" onclick="openMenu()" role="button" aria-label="Open menu" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu (mobile) -->
+    <div id="menu" class="menu">
+        <div class="menu-header">
+            <img src="image/logo-img.png" alt="Crime Tattoo Studio" class="menu-logo">
+            <span class="close" onclick="closeMenu()">✕</span>
+        </div>
+
+        <ul>
+            <li><a href="index.html#home" onclick="closeMenu()">HOME</a></li>
+            <li><a href="index.html#about" onclick="closeMenu()">ABOUT</a></li>
+            <li><a href="index.html#aesthetics" onclick="closeMenu()">Services</a></li>
+            <li class="active"><a href="academy.html" onclick="closeMenu()">TATTOO ACADEMY</a></li>
+            <li><a href="index.html#contact" onclick="closeMenu()">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <!-- ---------------------------------------------------------------- academy hero ---------------------------------------------------------------- -->
+    <div class="academy-hero">
+        <img src="image/course.jpg" alt="Tattoo academy training session" class="front-img">
+        <div class="overlay">
+            <p class="academy-eyebrow">CRIME TATTOO ACADEMY</p>
+            <h1 class="overlay-text">Learn the Craft.<br>Build the Career.</h1>
+            <p class="overlay-text-P">Hands-on tattoo training from sketch to skin, taught by working artists.</p>
+            <a href="https://wa.me/919080496865?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Tattoo%20Academy." target="_blank" rel="noopener" class="overlay-text-button" style="margin-bottom: 0;">
+                <i class="fa-brands fa-whatsapp"></i> ENQUIRE ABOUT A COURSE
+            </a>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- stat strip ---------------------------------------------------------------- -->
+    <div class="academy-stats">
+        <div class="academy-stat">
+            <span class="num">8+</span>
+            <span class="label">Years Training</span>
+        </div>
+        <div class="academy-stat">
+            <span class="num">7,000+</span>
+            <span class="label">Clients Served</span>
+        </div>
+        <div class="academy-stat">
+            <span class="num">2</span>
+            <span class="label">Course Levels</span>
+        </div>
+        <div class="academy-stat">
+            <span class="num">100%</span>
+            <span class="label">Hands-On Practice</span>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- intro ---------------------------------------------------------------- -->
+    <section class="content-section">
+        <h1 class="section-title">The Best Tattoo Training in Salem</h1>
+        <div class="placeholder-block">
+            <p class="placeholder-text">
+                Crime Tattoo Academy is the training arm of Crime Tattoo Studio — open to artists, designers, and anyone ready to turn tattooing into a career. We bring 8+ years of studio experience into the classroom, so every lesson is grounded in what actually works on real skin, with real clients.
+            </p>
+            <br>
+            <p class="placeholder-text">
+                Students start with the fundamentals — sketching, shading, and machine setup — before practising on synthetic skin and eventually working with real clients under direct supervision. Beyond technique, we cover hygiene standards, client handling, and the day-to-day of running a studio, so graduates leave ready for the industry, not just the needle.
+            </p>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- why train with us ---------------------------------------------------------------- -->
+    <section class="content-section content-section-alt">
+        <h1 class="section-title">Why Train With Us</h1>
+        <p class="placeholder-note">Six reasons our students graduate studio-ready</p>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>Certified Trainers</h3>
+                <p>Learn from working artists with years of hands-on tattooing experience, mentoring you one-on-one as your style develops.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+                <h3>Hands-On Practice</h3>
+                <p>Progress from paper to practice skin to real clients, with guided sessions every step of the way.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-palette"></i></div>
+                <h3>Creative Freedom</h3>
+                <p>Explore traditional, realism, and modern styles while developing a voice that's distinctly your own.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Safe &amp; Hygienic Practice</h3>
+                <p>Master sterilisation, cross-contamination prevention, and the safety standards every professional studio expects.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-gear"></i></div>
+                <h3>Studio-Grade Equipment</h3>
+                <p>Train on the same machines, inks, and supplies used in working studios — not entry-level kits.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                <h3>Digital Design Skills</h3>
+                <p>Pick up Photoshop and iPad design tooling to refine artwork and present concepts to clients with confidence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- courses ---------------------------------------------------------------- -->
+    <section class="content-section" id="courses">
+        <h1 class="section-title">Courses</h1>
+
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="course-head">
+                    <p class="course-tier">BEGINNER</p>
+                    <h3 class="course-title">Foundations of Ink</h3>
+                    <span class="course-duration">2 MONTHS</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-schedule">Monday – Friday · 12 PM – 5 PM</p>
+                    <ul class="course-list">
+                        <li>Machine setup, needles, inks, and workstation hygiene</li>
+                        <li>Sketching, lining, and shading fundamentals</li>
+                        <li>Intro to Photoshop and iPad design tooling</li>
+                        <li>Choosing designs and placement for clients</li>
+                        <li>Supervised practice on synthetic skin</li>
+                    </ul>
+                    <a href="https://wa.me/919080496865?text=Hi%2C%20I%27d%20like%20to%20enroll%20in%20the%20Beginner%20tattoo%20course." target="_blank" rel="noopener" class="course-enroll-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Enquire Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-head">
+                    <p class="course-tier">ADVANCED</p>
+                    <h3 class="course-title">Mastering the Craft</h3>
+                    <span class="course-duration">4 MONTHS</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-schedule">Monday – Friday · 12 PM – 5 PM</p>
+                    <ul class="course-list">
+                        <li>Advanced machine work and complex line/colour/shade technique</li>
+                        <li>Portraits, watercolour, and photorealistic styles</li>
+                        <li>Advanced Photoshop and iPad tooling for client mockups</li>
+                        <li>Client handling and studio management essentials</li>
+                        <li>Extensive hands-on hours as a working studio artist</li>
+                    </ul>
+                    <a href="https://wa.me/919080496865?text=Hi%2C%20I%27d%20like%20to%20enroll%20in%20the%20Advanced%20tattoo%20course." target="_blank" rel="noopener" class="course-enroll-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Enquire Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- student work gallery ---------------------------------------------------------------- -->
+    <section class="content-section content-section-alt">
+        <h1 class="section-title">Student Work</h1>
+        <p class="placeholder-note">Placeholder gallery — replace with real student work photos</p>
+        <div class="student-work-grid">
+            <img src="image/art-1.jpg" alt="Student tattoo work 1">
+            <img src="image/art-2.jpeg" alt="Student tattoo work 2">
+            <img src="image/art-3.jpeg" alt="Student tattoo work 3">
+            <img src="image/art-4.jpeg" alt="Student tattoo work 4">
+            <img src="image/art-5.jpeg" alt="Student tattoo work 5">
+            <img src="image/art-6.jpeg" alt="Student tattoo work 6">
+            <img src="image/art-1.jpg" alt="Student tattoo work 7">
+            <img src="image/art-2.jpeg" alt="Student tattoo work 8">
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- testimonials ---------------------------------------------------------------- -->
+    <section class="content-section">
+        <h1 class="section-title">What Our Students Say</h1>
+        <p class="placeholder-note">Placeholder quotes — replace with real student testimonials</p>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p class="quote-mark">&ldquo;</p>
+                <p class="quote">The instructors started me right from the basics and never made me feel rushed. The hands-on practice gave me real confidence before I ever touched a client.</p>
+                <p class="student-name">Arunesh</p>
+                <p class="student-origin">Batch of 2026, Salem</p>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote-mark">&ldquo;</p>
+                <p class="quote">What stood out was the one-on-one mentorship. They pushed me to find my own style instead of just copying references.</p>
+                <p class="student-name">Surendharan</p>
+                <p class="student-origin">Batch of 2025, Salem</p>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote-mark">&ldquo;</p>
+                <p class="quote">I came in with zero experience. By the end of the advanced course I was working on real clients in the studio under supervision.</p>
+                <p class="student-name">Kristy</p>
+                <p class="student-origin">Batch of 2026, Salem</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- enroll CTA band ---------------------------------------------------------------- -->
+    <div class="academy-cta-band">
+        <h2>Ready to start your tattoo career?</h2>
+        <p>Message us on WhatsApp for a free orientation, seat availability, and the next batch start date.</p>
+        <a href="https://wa.me/919080496865?text=Hi%2C%20I%27d%20like%20a%20free%20orientation%20for%20the%20Tattoo%20Academy." target="_blank" rel="noopener" class="academy-cta-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Free Orientation
+        </a>
+    </div>
+
+    <!-- ---------------------------------------------------------------- floating whatsapp (mobile + desktop) ---------------------------------------------------------------- -->
+    <a href="https://wa.me/919080496865?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Tattoo%20Academy." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Enquire about the Tattoo Academy on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Crime Tattoo Studio &amp; Academy, Salem.</p>
+        <div>
+            <a href="https://www.instagram.com/crime_tattoo_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="insta-icon">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function openMenu() {
+            document.getElementById("menu").classList.add("active");
+        }
+
+        function closeMenu() {
+            document.getElementById("menu").classList.remove("active");
+        }
+    </script>
+</body>
+</html>
